@@ -10,7 +10,7 @@ EcoWallet é uma aplicação desktop desenvolvida em Java com JavaFX (JDK 21) qu
 * 🔍 Filtro por categorias (alimentação, transporte, energia, etc.)
 * 💡 Sugestões para reduzir impacto ambiental
 
-### 🛠️ Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 * Java (JDK 21)
 * JavaFX
 * FXML para construção de interfaces
