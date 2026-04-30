@@ -10,7 +10,7 @@ Projeto final do curso de "Programação Orientada a Objetos", onde é apresenta
 🔍 Filtro por categorias (alimentação, transporte, energia, etc.)
 💡 Sugestões para reduzir impacto ambiental
 
-###🛠️ Tecnologias Utilizadas
+### 🛠️ Tecnologias Utilizadas
 Java (JDK 21)
 JavaFX
 FXML para construção de interfaces
