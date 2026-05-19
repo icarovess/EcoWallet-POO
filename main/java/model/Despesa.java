@@ -1,12 +1,16 @@
 package main.java.model;
 
 import java.time.LocalDate;
-import java.util.Locale.Category;
 
 public class Despesa extends Transacao{
 
-    public Despesa(String descricao, Double valor, LocalDate data, Category categoria){
+    public Despesa(String descricao, Double valor, LocalDate data, Categoria categoria){
         super(descricao, valor, data, categoria);
+    }
+
+    @Override
+    public Double getValorparaSaldo(){
+        return getValor() * -1;
     }
     
 }
