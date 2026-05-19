@@ -5,14 +5,12 @@ EcoWallet é uma aplicação desktop desenvolvida em Java com JavaFX (JDK 21) qu
 * 💰 Controle de receitas e despesas
 * 🌍 Classificação de gastos por impacto ambiental
 * 📊 Dashboard com gráficos financeiros
-* ♻️ Indicadores de consumo sustentável
+* ♻️ Indicadores de consumo
 * 📅 Histórico de transações
-* 🔍 Filtro por categorias (alimentação, transporte, energia, etc.)
-* 💡 Sugestões para reduzir impacto ambiental
+* 🔍 Filtro por categorias (alimentação, transporte, moradia, etc.)
 
 ## 🛠️ Tecnologias Utilizadas
 * Java (JDK 21)
 * JavaFX
 * FXML para construção de interfaces
 * CSS para estilização
-* Maven ou Gradle (opcional, dependendo do projeto)
