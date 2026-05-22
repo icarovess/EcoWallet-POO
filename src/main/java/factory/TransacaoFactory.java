@@ -1,8 +1,8 @@
-package main.java.factory;
+package factory;
 
 import java.time.LocalDate;
 
-import main.java.model;
+import model.*;
 
 public class TransacaoFactory {
 

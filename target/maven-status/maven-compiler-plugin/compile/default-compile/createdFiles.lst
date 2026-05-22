@@ -1,0 +1,7 @@
+model/Categoria.class
+model/Transacao.class
+model/Receita.class
+service/GerenciadorFinancas.class
+main/Main.class
+factory/TransacaoFactory.class
+model/Despesa.class

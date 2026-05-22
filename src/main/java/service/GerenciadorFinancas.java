@@ -1,8 +1,9 @@
-package main.java.service;
+package service;
 
 import java.util.ArrayList;
 import java.util.List;
-import main.java.model.*;
+
+import model.*;
 
 public class GerenciadorFinancas {
 
