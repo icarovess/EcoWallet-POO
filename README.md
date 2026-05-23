@@ -19,29 +19,39 @@ EcoWallet é uma aplicação desktop desenvolvida em Java com JavaFX que permite
 - Maven 3.8+
 
 ## Estrutura do Projeto
+```bash
 EcoWallet-POO/
+├── src/
+│   └── main/
+│       ├── java/
+│       │   ├── app/
+│       │   │   └── Main.java
+│       │   │
+│       │   ├── controller/
+│       │   │   └── FinanceiroController.java
+│       │   │
+│       │   ├── factory/
+│       │   │   └── TransacaoFactory.java
+│       │   │
+│       │   ├── model/
+│       │   │   ├── Categoria.java
+│       │   │   ├── Despesa.java
+│       │   │   ├── Receita.java
+│       │   │   └── Transacao.java
+│       │   │
+│       │   └── service/
+│       │       └── GerenciadorFinancas.java
+│       │
+│       └── resources/
+│           └── view/
+│               ├── PrincipalView.fxml
+│               └── style.css
+│
+├── module-info.java
 ├── pom.xml
-└── src/
-└── main/
-├── java/
-│   ├── module-info.java
-│   ├── app/
-│   │   └── Main.java
-│   ├── controller/
-│   │   └── FinanceiroController.java
-│   ├── factory/
-│   │   └── TransacaoFactory.java
-│   ├── model/
-│   │   ├── Categoria.java
-│   │   ├── Despesa.java
-│   │   ├── Receita.java
-│   │   └── Transacao.java
-│   └── service/
-│       └── GerenciadorFinancas.java
-└── resources/
-└── view/
-├── PrincipalView.fxml
-└── style.css
+├── LICENSE
+└── README.md
+```
 
 ## Pré-requisitos
 
