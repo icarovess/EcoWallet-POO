@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controller.FinanceiroController"
+      styleClass="root-container"
+      spacing="0">
+
+    <VBox styleClass="header-section">
+        <padding><Insets top="24" right="32" bottom="20" left="32"/></padding>
+        <Label text="EcoWallet" styleClass="app-title"/>
+        <Label text="Gerenciador Financeiro Pessoal" styleClass="app-subtitle"/>
+    </VBox>
+
+    <VBox styleClass="form-card">
+        <padding><Insets top="24" right="32" bottom="24" left="32"/></padding>
+        <spacing>16</spacing>
+
+        <Label text="Nova Transacao" styleClass="section-title"/>
+
+        <HBox spacing="16">
+            <VBox spacing="6" HBox.hgrow="ALWAYS">
+                <Label text="Descricao" styleClass="field-label"/>
+                <TextField fx:id="txtDescricao"
+                           promptText="Ex: Ida ao trabalho"
+                           styleClass="text-field"
+                           maxWidth="Infinity"/>
+            </VBox>
+            <VBox spacing="6" prefWidth="160">
+                <Label text="Valor (R$)" styleClass="field-label"/>
+                <TextField fx:id="txtValor"
+                           promptText="0,00"
+                           styleClass="text-field"
+                           maxWidth="160"/>
+            </VBox>
+        </HBox>
+
+        <HBox spacing="16">
+            <VBox spacing="6" prefWidth="180">
+                <Label text="Tipo" styleClass="field-label"/>
+                <ComboBox fx:id="cmbTipo" maxWidth="Infinity" styleClass="combo-box-custom"/>
+            </VBox>
+            <VBox spacing="6" HBox.hgrow="ALWAYS">
+                <Label text="Categoria" styleClass="field-label"/>
+                <ComboBox fx:id="cmbCategoria" maxWidth="Infinity" styleClass="combo-box-custom"/>
+            </VBox>
+            <VBox spacing="6" prefWidth="180">
+                <Label text="Data" styleClass="field-label"/>
+                <DatePicker fx:id="datePicker" maxWidth="Infinity" styleClass="date-picker-custom"/>
+            </VBox>
+        </HBox>
+
+        <HBox spacing="12" alignment="CENTER_RIGHT">
+            <Button text="Limpar"
+                    styleClass="btn-secondary"
+                    onAction="#handleLimpar"/>
+            <Button text="Remover Selecionado"
+                    styleClass="btn-danger"
+                    onAction="#handleRemover"/>
+            <Button text="+ Adicionar Transacao"
+                    styleClass="btn-primary"
+                    onAction="#handleAdicionar"
+                    defaultButton="true"/>
+        </HBox>
+    </VBox>
+
+    <HBox styleClass="saldo-bar">
+        <padding><Insets top="14" right="32" bottom="14" left="32"/></padding>
+        <Label fx:id="lblSaldo" text="Saldo Total: R$ 0,00" styleClass="saldo-label"/>
+    </HBox>
+
+    <VBox VBox.vgrow="ALWAYS" styleClass="table-section">
+        <padding><Insets top="16" right="32" bottom="24" left="32"/></padding>
+
+        <TableView fx:id="tabelaTransacoes"
+                   VBox.vgrow="ALWAYS"
+                   styleClass="transaction-table">
+            <columns>
+                <TableColumn fx:id="colDescricao" text="Descricao"  prefWidth="260"
+                             style="-fx-alignment: CENTER-LEFT;"/>
+                <TableColumn fx:id="colValor"     text="Valor (R$)" prefWidth="140"
+                             style="-fx-alignment: CENTER;"/>
+                <TableColumn fx:id="colTipo"      text="Tipo"       prefWidth="110"
+                             style="-fx-alignment: CENTER;"/>
+                <TableColumn fx:id="colCategoria" text="Categoria"  prefWidth="140"
+                             style="-fx-alignment: CENTER;"/>
+                <TableColumn fx:id="colData"      text="Data"       prefWidth="120"
+                             style="-fx-alignment: CENTER;"/>
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+            </columnResizePolicy>
+        </TableView>
+    </VBox>
+</VBox>

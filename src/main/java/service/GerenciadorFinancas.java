@@ -3,7 +3,7 @@ package service;
 import java.util.ArrayList;
 import java.util.List;
 
-import model.*;
+import model.Transacao;
 
 public class GerenciadorFinancas {
 
@@ -13,25 +13,23 @@ public class GerenciadorFinancas {
         transacoes = new ArrayList<>();
     }
 
-    //adicionar transição na lista
-    public void adicionarTransicao(Transacao transacao) {
+    public void adicionarTransacao(Transacao transacao) {
         transacoes.add(transacao);
     }
 
+    public void removerTransacao(Transacao transacao) {
+        transacoes.remove(transacao);
+    }
 
-    //Calcular o saldo.
-    public double calcularSaldo(){
+    public double calcularSaldo() {
         double saldo = 0;
-
         for (Transacao transacao : transacoes) {
-            saldo += transacao.getValor();
+            saldo += transacao.getValorparaSaldo();
         }
-
         return saldo;
     }
 
-    //Setter lista de transição
     public List<Transacao> getTransacoes() {
         return transacoes;
-    }  
+    }
 }
