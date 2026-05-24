@@ -46,6 +46,8 @@ EcoWallet-POO/
 │           └── view/
 │               ├── PrincipalView.fxml
 │               └── style.css
+├── dados/
+│   └── ecowallet_dados.json
 │
 ├── module-info.java
 ├── pom.xml
@@ -69,9 +71,9 @@ mvn clean javafx:run
 
 As transações são salvas automaticamente em formato JSON no diretório do usuário:
 
-- Windows: `C:\Users\<usuario>\ecowallet_dados.json`
-- Linux/macOS: `~/ecowallet_dados.json`
+- `EcoWallet-POO/dados/ecowallet_dados.json`
 
+O arquivo é criado automaticamente na primeira execução.
 Os dados são carregados automaticamente ao iniciar a aplicação.
 
 ## Padrões de Projeto Utilizados
