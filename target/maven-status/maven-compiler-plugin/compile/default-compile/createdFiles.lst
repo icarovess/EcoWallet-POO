@@ -9,3 +9,4 @@ model\Receita.class
 controller\FinanceiroController.class
 factory\TransacaoFactory.class
 controller\FinanceiroController$2.class
+service\GerenciadorFinancas$1.class
